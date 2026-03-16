@@ -99,7 +99,7 @@ class CartScreen extends StatelessWidget {
             alignment: Alignment.centerRight,
             padding: const EdgeInsets.only(right: 20),
             decoration: BoxDecoration(
-              color: AppTheme.highlight.withOpacity(0.1),
+              color: AppTheme.highlight.withValues(alpha: 0.1),
               borderRadius: BorderRadius.circular(16),
             ),
             child: const Icon(Icons.delete_outline,
