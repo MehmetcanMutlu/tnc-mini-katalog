@@ -201,18 +201,18 @@ class _ProductListScreenState extends State<ProductListScreen> {
   }
 
   Widget _buildEmpty() {
-    return Center(
+    return const Center(
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          const Icon(Icons.search_off_rounded,
+        children: <Widget>[
+          Icon(Icons.search_off_rounded,
               size: 64, color: AppTheme.textSecondary),
-          const SizedBox(height: 16),
-          const Text('Sonuç bulunamadı',
+          SizedBox(height: 16),
+          Text('Sonuç bulunamadı',
               style:
                   TextStyle(fontSize: 18, fontWeight: FontWeight.w600)),
-          const SizedBox(height: 8),
-          const Text('Farklı bir arama terimi deneyin',
+          SizedBox(height: 8),
+          Text('Farklı bir arama terimi deneyin',
               style: TextStyle(color: AppTheme.textSecondary)),
         ],
       ),
