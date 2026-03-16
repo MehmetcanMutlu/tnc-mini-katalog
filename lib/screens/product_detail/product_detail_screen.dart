@@ -73,7 +73,7 @@ class ProductDetailScreen extends StatelessWidget {
                   shape: BoxShape.circle,
                   boxShadow: [
                     BoxShadow(
-                        color: Colors.black.withOpacity(0.1),
+                        color: Colors.black.withValues(alpha: 0.1),
                         blurRadius: 8)
                   ],
                 ),
@@ -117,7 +117,7 @@ class ProductDetailScreen extends StatelessWidget {
                     padding: const EdgeInsets.symmetric(
                         horizontal: 12, vertical: 4),
                     decoration: BoxDecoration(
-                      color: AppTheme.primary.withOpacity(0.08),
+                      color: AppTheme.primary.withValues(alpha: 0.08),
                       borderRadius: BorderRadius.circular(20),
                     ),
                     child: Text(
@@ -214,10 +214,10 @@ class ProductDetailScreen extends StatelessWidget {
                     Container(
                       padding: const EdgeInsets.all(16),
                       decoration: BoxDecoration(
-                        color: AppTheme.primary.withOpacity(0.05),
+                        color: AppTheme.primary.withValues(alpha: 0.05),
                         borderRadius: BorderRadius.circular(16),
                         border: Border.all(
-                            color: AppTheme.primary.withOpacity(0.15)),
+                            color: AppTheme.primary.withValues(alpha: 0.15)),
                       ),
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
